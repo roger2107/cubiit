@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-color: v.$cubiit_oscuro;
+
+    .contenido-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.img-logo{
+    height: 8rem;
+    padding: 1rem 0;
+}
+
+.navegacion-principal{
+    @include m.tablet {
+        display: flex;
+        gap: 2rem;
+    }
+    a{
+        color: v.$blanco;
+        font-size: 2.4rem;
+        display: block;
+        margin: 1rem 0;
+        @include m.tablet{
+            margin: 0;
+        }
+
+        &:hover{
+            color: v.$cubiit_verdeclaro;
+        }
+    }
+}
