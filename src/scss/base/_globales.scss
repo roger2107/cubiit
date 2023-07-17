@@ -1,8 +1,10 @@
 @use 'variables' as v;
 
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
     box-sizing: border-box;
+    
 }
 *,
 *:before,
@@ -30,7 +32,7 @@ a{
     text-decoration: none;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     margin: 0 0 5rem 0;
     font-family: v.$fuente_principal;
     font-weight: bold;

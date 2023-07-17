@@ -1,0 +1,64 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-contacto{
+    background-color: v.$gris_claro;
+    padding: 3rem 1rem;
+    h2, p{
+        padding-left: 2rem;
+        color: v.$cubiit_oscuro;
+        margin-bottom: 1rem;
+    }
+
+    @include m.desktop{
+        display: flex;
+    }
+}
+
+.contenedor-contacto{
+    width: 90%;
+    margin: 0 auto;
+    background-color: v.$blanco;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    //sombra
+    -webkit-box-shadow: 4px 4px 5px 1px rgba(232,232,232,1);
+    -moz-box-shadow: 4px 4px 5px 1px rgba(232,232,232,1);
+    box-shadow: 4px 4px 5px 1px rgba(232,232,232,1);                                            
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+    
+}
+
+.contenedor-icono{
+    background-color: v.$cubiit_verdeclaro;
+    border-radius: 10rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 10rem;
+        height: 10rem;
+    }
+    @include m.telefono{
+        width: 10rem;
+        height: 10rem;
+        img{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    &:hover{
+        background-color: darken(v.$cubiit_verdeclaro , 20);
+        cursor: pointer;
+        
+    }
+}

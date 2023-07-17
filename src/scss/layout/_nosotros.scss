@@ -1,0 +1,34 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-nosotros{
+    background-color: v.$gris_claro;
+}
+
+.contenido-nosotros{
+    @include m.desktop{
+        @include m.grid(2, 1rem);
+    }
+}
+
+.texto-nosotros{
+    h2, p{
+        color: v.$cubiit_oscuro;
+        margin: 0 2rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        padding-top: 1rem;
+        
+    }
+}
+
+
+.imagen-nosotros{
+    //background-color: red;
+    background-image: url('../img/imagen-nosotros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40rem;
+    position: relative;
+}

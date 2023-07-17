@@ -15,27 +15,147 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div >
-                <a href="#"><img class="img-logo" src="img/logo.png" alt="Logo cubiit"></a>
+    <div class="header">
+        <img class="img-logo" src="build/img/logo_hz_normal.png" alt="logo cubiit">
+        
+        <nav class="navegacion">
+            <a href="./">Inicio</a>
+            <a href="./#sec-nosotros">Nosotros</a>
+            <a href="./#sec-proyectos">Proyectos</a>
+            <a href="./#sec-contacto">Contacto</a>
+        </nav>
+    </div>
+    <main id="sec-inicio">
+        <div class="contenedor-general">
+            <div class="contenedor-texto">
+                <span class="txt-estatico">Soluciones en</span>
+                <div >
+                    <span class="txt-animado typed"></span>
+                </div>
+    
+            </div>
+            <div class="contenedor-imagen">
+    
+            </div>
+        </div>
+    </main>
+    <section id="sec-servicios" class="seccion-servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos soluciones tecnológicas integrales para hacer crecer tu negocio. Te asesoramos para seguir 
+            la ruta adecuada que se adapte a las necesidades de tu proyecto.
+        </p>
+        <div class="contenedor-servicios">
+            <div class="card-servicio">
+                <img class="icono-servicio" src="build/img/icono_diseñoweb.png" alt="diseño web">
+                <h3>Diseño Web</h3>
+                <p>Diseñamos el sitio web ideal y flexible para tu negocio. Con presencia en Internet, ¡llegas a donde tú quieras!</p>
+                <a href="./diseño-web.html" class="boton boton-servicio">Más Info.</a>
             </div>
 
-            <nav class="navegacion-principal">
-                <a href="#">Nosotros</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-    </header>
-    <div class="banner">
-        <div class="overlay">
-            <div class="contenedor contenido-banner">
-                <h2>Soluciones en</h2>
-                <h2 class="efecto-maquina">Diseño Web</h2>
+            <div class="card-servicio">
+                <img class="icono-servicio" src="build/img/icono_tiendaonline.png" alt="diseño web">
+                <h3>Tienda Online</h3>
+                <p>Llevamos tu negocio a internet, vende tus productos en cualquier lugar, a cualquier hora y en tiempo real.</p>
+                <a href="./tienda-online.html" class="boton boton-servicio">Más Info.</a>
+            </div>
+
+            <div class="card-servicio">
+                <img class="icono-servicio" src="build/img/icono_catalogo.png" alt="diseño web">
+                <h3>Catálogo Digital</h3>
+                <p>Diseñamos el catálogo que más se adapte a tu negocio, compartelo con tus clientes de forma rápida y sencilla.</p>
+                <a href="./catalogos.html" class="boton boton-servicio">Más Info.</a>
             </div>
         </div>
-        <img class="img-banner" src="img/banner.jpg" alt="banner cubiit">
-    </div>
+    </section>
+    <section id="sec-nosotros" class="seccion-nosotros">
+        
+        <div class="contenido-nosotros">
+            <div class="texto-nosotros">
+                <h2>Somos expertos en innovación digital para tu negocio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quisquam possimus aliquam similique? Reiciendis veritatis aspernatur illo voluptatum ut velit, non enim modi quisquam voluptate a fuga ratione ipsam officia?</p>
+            </div>
+            <div class="imagen-nosotros">
+                <!-- <img src="build/img/imagen-nosotros.jpg" alt="imagen nosotros" > -->
+            </div>
+        </div>
+    </section>
+    <section id="sec-proyectos" class="seccion-proyectos">
+        <h2>Proyectos Recientes</h2>
+        <div class="contenido-proyectos">
+            <a href="https://www.comercializadoradelpacifico.mx/" target="_blank">
+                <div class="proyecto">
+                    <div class="logo-proyecto">
+                        <img src="build/img/logo_comdelpac.png" alt="comercializadora del pacifico">
+                    </div>
+                    <p class="nombre-proyecto">Comercializadora Del Pacífico</p>
+                </div>
+            </a>
+            <a href="https://dimpaof.com/" target="_blank">
+                <div class="proyecto">
+                    <div class="logo-proyecto">
+                        <img src="build/img/logo_dimpaof.webp" alt="DIMPAOF">
+                    </div>
+                    <p class="nombre-proyecto">DIMPAOF</p>
+                </div>
+            </a>
+            <a href="https://grcorporativo.com.mx/" target="_blank">
+                <div class="proyecto">
+                    <div class="logo-proyecto">
+                        <img src="build/img/logo_grcorporativo.png" alt="gr corporativo">
+                    </div>
+                    <p class="nombre-proyecto">GR Corporativo</p>
+                </div>
+            </a>
+            <a href="https://www.cimadistribuciones.com" target="_blank">
+                <div class="proyecto">
+                    <div class="logo-proyecto">
+                        <img src="build/img/logo_cima.png" alt="gr corporativo">
+                    </div>
+                    <p class="nombre-proyecto">CIMA Distribuciones</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="sec-contacto" class="seccion-contacto">
+        <div class="contenedor-textocontacto">
+            <h2>Contáctanos</h2>
+            <p>¡Contáctanos! Dejanos un mensaje y con gusto resolveremos tus dudas. </p>
+        </div>
+        <div class="contenedor-contacto">
+            <div class="contenedor-icono">
+                <a href="https://www.facebook.com/cubiitoax" target="_blank">
+                    <img src="build/img/icono_facebook.png" alt="Facbook">
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://api.whatsapp.com/send?phone=529511942389&text=Quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios..." target="_blank">
+                    <img src="build/img/icono_whatsapp.png" alt="Facbook">
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="tel:+529511942389" target="_blank">
+                    <img src="build/img/icono_llamada.png" alt="Facbook">
+                </a>
+            </div>
+            <!-- <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt=""> -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="contenedor-elementosfooter">
+                <img class="img-logo" src="build/img/logo_hz_normal.png" alt="logo cubiit">
+                <nav class="navegacion">
+                    <a href="./">Inicio</a>
+                    <a href="./#sec-nosotros">Nosotros</a>
+                    <a href="./#sec-proyectos">Proyectos</a>
+                    <a href="./#sec-contacto">Contacto</a>
+                </nav>
+            </div>
+            <p>Todos los derechos reservados. Cubiit Diseño Web & Marketing.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-proyectos{
+    padding: 1.5rem 0;
+    background-color: v.$cubiit_azuloscuro;
+    h2{
+        color: v.$cubiit_verdeclaro;
+       
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.contenido-proyectos{
+    margin: 0 2rem;
+    @include m.telefono{
+        @include m.grid(2, 2rem);
+    }
+    @include m.desktop{
+        @include m.grid(4, 2rem);
+    }
+    
+}
+
+.proyecto{
+    height: 25rem;
+    min-height: 15rem;
+    background-color: v.$gris_claro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    
+    p{
+        text-align: center;
+        font-weight: bold;
+        color: v.$cubiit_azuloscuro;
+    }
+    &:hover{
+        margin: -1rem;
+    }
+    
+}
+
+.logo-proyecto{
+    width: 10rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    img{
+        width: 10rem;
+        height: auto;
+    }
+}

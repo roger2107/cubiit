@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$cubiit_azuloscuro;
+    
+    p{
+        color: v.$blanco;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+.contenedor-elementosfooter{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        a{
+            font-size: 2rem; 
+            line-height: .8;
+        }
+    }
+    .img-logo{
+        width: 30rem;
+        height: 8rem;
+    }
+    
+}
+
