@@ -9,17 +9,36 @@
     padding-left: 2rem;
     padding-right: 2rem;
     margin: 0 auto;
+
+    @include m.telefono{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include m.desktop{
+        display: flex;
+        flex-direction: row;
+    }
 }
+
 .img-logo{
     width: 20rem;
     padding: 1rem 0;
 }
 
 .navegacion{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear;
+
     @include m.tablet {
         display: flex;
         gap: 2rem;
+        opacity: 1;
+        visibility: visible;
     }
+    
     a{
         color: v.$blanco;
         font-size: 2.4rem;
@@ -36,4 +55,21 @@
             //text-decoration: underline;
         }
     }
+}
+
+//menu hambuerguesa
+
+.mobile-menu{
+    cursor: pointer;
+    @include m.tablet{
+        display: none;
+        
+
+    }
+}
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
 }
