@@ -320,7 +320,7 @@ html {
 }
 
 body {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -341,7 +341,7 @@ a {
 
 h1, h2, h3, h4 {
   margin: 0 0 5rem 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: bold;
 }
 
@@ -357,8 +357,13 @@ h3 {
   font-size: 3rem;
 }
 
+.resaltado {
+  color: #01C38E;
+  font-weight: bold;
+}
+
 .header {
-  background-color: #132D46;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -411,6 +416,7 @@ h3 {
 }
 .navegacion a:hover {
   color: #01C38E;
+  background-color: #000;
   font-size: 2.6rem;
   font-weight: bold;
 }
@@ -446,7 +452,7 @@ h3 {
 
 .contenedor-texto {
   min-height: 15rem;
-  background-color: #132D46;
+  background-color: #000;
   font-size: 2.6rem;
   color: white;
   display: flex;
@@ -489,7 +495,7 @@ h3 {
 }
 
 .seccion-servicios {
-  background-color: #132D46;
+  background-color: #000;
   padding: 1rem 2rem;
   animation: slideMe 0.5s ease-in;
 }
@@ -518,7 +524,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #132D46;
+  background-color: #000;
   border: solid 3px #01C38E;
   border-radius: 2rem;
   margin: 1rem;
@@ -647,7 +653,7 @@ h3 {
 
 .seccion-proyectos {
   padding: 1.5rem 0;
-  background-color: #132D46;
+  background-color: #000;
 }
 .seccion-proyectos h2 {
   color: #01C38E;
@@ -685,7 +691,7 @@ h3 {
 .proyecto p {
   text-align: center;
   font-weight: bold;
-  color: #132D46;
+  color: #000;
 }
 .proyecto:hover {
   margin: -1rem;
@@ -765,7 +771,7 @@ h3 {
 }
 
 .footer {
-  background-color: #132D46;
+  background-color: #000;
 }
 .footer p {
   color: #fff;
@@ -813,4 +819,197 @@ h3 {
 .contenedor-elementosfooter .img-logo {
   width: 30rem;
   height: 8rem;
+}
+
+.seccion-paquetes {
+  background-color: #000;
+}
+.seccion-paquetes h3 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding: 3rem 2rem 0 2rem;
+}
+.seccion-paquetes p {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding: 2rem 2rem;
+}
+
+.contenedor-paquetes {
+  padding: 0 2rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .contenedor-paquetes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+.paquete {
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.paquete h4 {
+  font-size: 2.5rem;
+  color: #000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.paquete .paquete-precio {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #000;
+  padding: 1.5rem 0 1.5rem 2rem;
+  margin-right: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  color: #fff;
+}
+@media (min-width: 480px) {
+  .paquete {
+    margin-bottom: 1rem;
+  }
+}
+.paquete:hover {
+  background-color: #000;
+}
+.paquete:hover h4 {
+  color: #fff;
+}
+.paquete:hover .paquete-precio {
+  background-color: #01C38E;
+}
+.paquete:hover .paquete-boton {
+  border: 1px solid #fff;
+}
+.paquete:hover .paquete-feats li {
+  color: #fff;
+}
+
+.paquete-boton {
+  display: block;
+  margin: 1rem 2rem;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.4rem;
+}
+.paquete-boton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.paquete-feats li {
+  line-height: 2;
+}
+
+.seccion-proceso h3 {
+  font-size: 3rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.contenedor-procesos {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media (min-width: 992px) {
+  .contenedor-procesos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.proceso-titulo {
+  display: flex;
+  align-items: flex-end;
+}
+.proceso-titulo p {
+  margin: 0;
+  margin-top: 1rem;
+}
+.proceso-titulo .proceso-numero {
+  font-size: 3.6rem;
+  background-color: #01C38E;
+  color: #fff;
+  padding: 1.2rem;
+  padding-bottom: 0;
+  margin-right: 0.3rem;
+}
+.proceso-titulo .proceso-nombre {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #01C38E;
+}
+
+.proceso-descripcion {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.seccion-informacion p {
+  margin: 2rem 2rem 3rem 2rem;
+}
+.seccion-informacion h3 {
+  font-size: 3rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.contenedor-consejos {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media (min-width: 992px) {
+  .contenedor-consejos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.consejo {
+  padding-bottom: 0;
+  border-bottom: solid 1px #01C38E;
+}
+
+.consejo-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-left: solid 4px #01C38E;
+  margin-bottom: 1.2rem;
+}
+
+.consejo-descripcion {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }

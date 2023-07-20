@@ -47,3 +47,10 @@ h2{
 h3{
     font-size: 3rem;
 }
+
+.resaltado{
+    color: v.$cubiit_verdeclaro;
+    font-weight: bold;
+    //border-bottom: solid 3px v.$cubiit_verdeclaro;
+    //text-decoration: underline;
+}

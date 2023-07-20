@@ -1,0 +1,165 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-paquetes{
+    background-color: v.$cubiit_azuloscuro;
+    
+    h3{
+        font-size: 3rem;
+        color: v.$blanco;
+        margin: 0;
+        padding: 0;
+        padding: 3rem 2rem 0 2rem;
+    }
+    p{
+        font-size: 2rem;
+        color: v.$blanco;
+        margin: 0;
+        padding: 0;
+        padding: 2rem  2rem ;
+    }
+}
+
+.contenedor-paquetes{
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+    @include m.tablet{
+        @include m.grid(3, 1rem);
+    }
+}
+
+.paquete{
+    background-color: v.$blanco;
+    border: solid 1px v.$blanco;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    h4{
+        font-size: 2.5rem;
+        color: v.$cubiit_azuloscuro;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        padding-left: 1rem;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        
+    }
+    .paquete-precio{
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+        font-weight: bold;
+        background-color: v.$cubiit_azuloscuro;
+        padding: 1.5rem 0 1.5rem 2rem;
+        margin-right: 2.5rem;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        
+        color: v.$blanco;
+    }
+
+    @include m.telefono{
+        margin-bottom: 1rem;
+    }
+
+    &:hover{
+        h4{
+            color: v.$blanco;
+        }
+        background-color: v.$cubiit_azuloscuro;
+        .paquete-precio{
+            background-color: v.$cubiit_verdeclaro;
+        }
+
+        .paquete-boton{
+            border: 1px solid v.$blanco;
+        }
+
+        .paquete-feats{
+            li{
+                color: v.$blanco;
+            }
+        }
+    }
+}
+
+.paquete-boton{
+    display: block;
+    margin: 1rem 2rem;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    background-color: v.$cubiit_azuloscuro;
+
+    color: v.$blanco;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.4rem;
+
+    &:hover{
+        background-color: v.$blanco;
+        color: v.$cubiit_azuloscuro;
+    }
+}
+
+.paquete-feats{
+    li{
+        //list-style: ;
+        //list-style: url('/build/img/list_style.png');
+        line-height: 2;
+    }
+}
+
+//PROCESO
+
+.seccion-proceso{
+    h3{
+        font-size: 3rem;
+        color: v.$cubiit_azuloscuro;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+        
+    }
+}
+
+.contenedor-procesos{
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include m.desktop{
+        @include m.grid(4, 2rem);
+    }
+}
+
+.proceso-titulo{
+    display: flex;
+    align-items: flex-end;
+    p{
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .proceso-numero{
+        font-size: 3.6rem;
+        background-color: v.$cubiit_verdeclaro;
+        color: v.$blanco;
+        //border: solid 1.5px v.$cubiit_verdeclaro;
+        padding: 1.2rem;
+        padding-bottom: 0;
+        margin-right: .3rem;
+    }
+
+    .proceso-nombre{
+        font-size: 3rem;
+        font-weight: bold;
+        color: v.$cubiit_verdeclaro;
+    }
+}
+
+.proceso-descripcion{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
