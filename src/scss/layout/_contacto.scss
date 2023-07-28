@@ -44,11 +44,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 7rem;
+    height: 7rem;
     img{
-        width: 10rem;
-        height: 10rem;
+        width: 4rem;
+        height: 4rem;
     }
-    @include m.telefono{
+    @include m.desktop{
         width: 10rem;
         height: 10rem;
         img{

@@ -729,12 +729,14 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 7rem;
+  height: 7rem;
 }
 .contenedor-icono img {
-  width: 10rem;
-  height: 10rem;
+  width: 4rem;
+  height: 4rem;
 }
-@media (min-width: 360px) {
+@media (min-width: 992px) {
   .contenedor-icono {
     width: 10rem;
     height: 10rem;
@@ -796,8 +798,14 @@ h3 {
   line-height: 0.8;
 }
 .contenedor-elementosfooter .img-logo {
-  width: 30rem;
-  height: 8rem;
+  width: 20rem;
+  height: 6rem;
+}
+@media (min-width: 992px) {
+  .contenedor-elementosfooter .img-logo {
+    width: 30rem;
+    height: 8rem;
+  }
 }
 
 .seccion-titulo h3 {

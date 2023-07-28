@@ -56,8 +56,13 @@
         }
     }
     .img-logo{
-        width: 30rem;
-        height: 8rem;
+        width: 20rem;
+        height: 6rem;
+        @include m.desktop{
+            width: 30rem;
+            height: 8rem;
+        }
+       
     }
     
 }
