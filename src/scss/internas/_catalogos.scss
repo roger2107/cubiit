@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion-demos{
+    background-color: v.$cubiit_azuloscuro;
+    color: v.$blanco;
+    h3{
+        padding-left: 2rem;
+        padding-top: 6rem;
+        margin-bottom: 1rem;
+        color: v.$cubiit_verdeclaro;
+        font-size: 4.5rem;
+    }
+    p{
+        padding-left: 2rem;
+        color: v.$blanco;
+        font-size: 2.4rem;
+    }
+}
+
+.contenedor-demos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.demo{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    @include m.desktop{
+        flex-direction: row;
+    }
+}
+
+.demo-imagen{
+    height: 50rem;
+    //overflow: hidden;
+    img{
+        height: 50rem;
+        max-height: 80rem;
+        width: 100%;
+    }
+}
+
+.demo-contenidotexos{
+    color: v.$blanco;
+    .demo-titulo{
+        margin: 0;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        font-size: 3.1rem;
+        font-weight: bold;
+        border-left: solid 4px v.$cubiit_verdeclaro;
+    }
+    li{
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}
+
+
+.boton-demo{
+    display: inline-block;
+    width: 90%;
+    margin: 1rem 2rem;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    background-color: v.$cubiit_azuloscuro;
+    border: solid 2px v.$cubiit_verdeclaro;
+
+    color: v.$blanco;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    &:hover{
+        background-color: v.$cubiit_verdeclaro;
+        color: v.$cubiit_azuloscuro;
+    }
+}

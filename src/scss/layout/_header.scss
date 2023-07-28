@@ -3,6 +3,7 @@
 
 .header{
     background-color: v.$cubiit_azuloscuro;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,11 +14,13 @@
     @include m.telefono{
         display: flex;
         flex-direction: column;
+        
     }
 
     @include m.desktop{
         display: flex;
         flex-direction: row;
+        height: 8rem;
     }
 }
 

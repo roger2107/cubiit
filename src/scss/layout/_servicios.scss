@@ -14,11 +14,10 @@
         margin: 0;
         
     }
-    animation: slideMe .5s ease-in;
+   
     
 }
 .contenedor-servicios{
-    //background-color: lighten(v.$cubiit_oscuro, 10);
     
     padding: 1rem;
     h2, h3{
@@ -36,7 +35,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    //background-color: ligthen(v.$cubiit_azuloscuro, 10);
     background-color: v.$cubiit_azuloscuro;
     border: solid 3px v.$cubiit_verdeclaro;
     border-radius: 2rem;
@@ -73,28 +71,3 @@
     }
 }
 
-@keyframes slideMe {
-    0%{
-        transform: skewX(53deg) translateX(-500px);
-        opacity: 0;
-    }
-    60%{
-        transform: translateX(0px);
-    }
-    62%{
-        transform: skewX(0deg) translateX(30px);
-    }
-    70%{
-        transform: skew(-20deg);
-        opacity: 100;
-    }
-    80%{
-        transform: skew(0deg) translate(0);
-    }
-    90%{
-        transform: skew(-5deg );
-    }
-    100%{
-        transform: skew(8deg);
-    }
-}
