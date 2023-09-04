@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="build/img/fav-icon.png"/>
     <title>cubiit - Diseño web & Marketing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--Orbitron-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!--Comforta-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +39,6 @@
                 <div >
                     <span class="txt-animado typed"></span>
                 </div>
-    
             </div>
             <div class="contenedor-imagen">
     
@@ -127,30 +123,39 @@
         </div>
     </section>
     <section id="sec-contacto" class="seccion-contacto">
-        <div class="contenedor-textocontacto">
-            <h2>Contáctanos</h2>
-            <p>¡Contáctanos! Dejanos un mensaje y con gusto resolveremos tus dudas. </p>
+        <div class="barra-contacto">
+            <div class="contenedor-textocontacto">
+                <h2>Contáctanos</h2>
+                <p>¡Contáctanos! Dejanos un mensaje y con gusto resolveremos tus dudas. </p>
+            </div>
+            <div class="contenedor-contactos">
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/cubiitoax" target="_blank">
+                        <img src="build/img/icono_facebook.png" alt="Facbook">
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://api.whatsapp.com/send?phone=529511942389&text=Quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios..." target="_blank">
+                        <img src="build/img/icono_whatsapp.png" alt="Facbook">
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="tel:+529511942389" target="_blank">
+                        <img src="build/img/icono_llamada.png" alt="Facbook">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="contenedor-contacto">
-            <div class="contenedor-icono">
-                <a href="https://www.facebook.com/cubiitoax" target="_blank">
-                    <img src="build/img/icono_facebook.png" alt="Facbook">
-                </a>
-            </div>
-            <div class="contenedor-icono">
-                <a href="https://api.whatsapp.com/send?phone=529511942389&text=Quisiera%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20servicios..." target="_blank">
-                    <img src="build/img/icono_whatsapp.png" alt="Facbook">
-                </a>
-            </div>
-            <div class="contenedor-icono">
-                <a href="tel:+529511942389" target="_blank">
-                    <img src="build/img/icono_llamada.png" alt="Facbook">
-                </a>
-            </div>
-            <!-- <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt=""> -->
-        </div>
+        <form class="formulario" action="correo.php" method="POST">
+            <fieldset class="formulario__campos">
+                <legend>Déjanos un mensaje</legend>
+                <input type="text" name="nombre" id="nommbre" placeholder="Nombre" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje" required ></textarea>
+                <input class="boton boton-principal" type="submit" value="Enviar">
+            </fieldset>
+        </form>
     </section>
     <footer>
         <div class="footer">
